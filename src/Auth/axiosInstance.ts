@@ -2,7 +2,7 @@ import axios from "axios";
 import { getToken, removeToken } from "./auth";
 
 const api = axios.create({
-  baseURL: "https://design-shark-backend-4-6.onrender.com/api",
+  baseURL: "https://design-shark-backend-4-5.onrender.com/api",
 });
 
 // Automatically attach token to requests

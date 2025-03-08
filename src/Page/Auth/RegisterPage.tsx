@@ -69,7 +69,7 @@ const Register = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
-      const response = await axios.post("https://design-shark-backend-4-6.onrender.com/api/auth/register", formData);
+      const response = await axios.post("https://design-shark-backend-4-5.onrender.com/api/auth/register", formData);
       if (response.status === 201) {
         alert("Registration successful!");
         navigate("/login"); // Redirect to login page after successful registration
