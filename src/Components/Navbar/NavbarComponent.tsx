@@ -10,7 +10,6 @@ import logo from "../../assets/image.png"
 import { useNavigate } from 'react-router-dom';
 
 export default function NavbarComponent() {
-    const [auth, setAuth] = React.useState(true);
     const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
     const naviagate = useNavigate();
 
@@ -39,7 +38,7 @@ export default function NavbarComponent() {
                         <MenuIcon />
                     </IconButton> */}
                     <img src={logo} />
-                    {auth && (
+                    {(
                         <div>
                             <IconButton
                                 size="large"
