@@ -20,8 +20,8 @@ api.interceptors.response.use(
   async (error) => {
     if (error.response && (error.response.status === 401 || error.response.status === 403)) {
       // console.error("Invalid or expired token. Logging out...");
-      // removeToken(); // Clear the token
-      // window.location.href = "/login"; // Redirect user to login page
+      removeToken(); // Clear the token
+      window.location.href = "/login"; // Redirect user to login page
     }
     return Promise.reject(error);
   }

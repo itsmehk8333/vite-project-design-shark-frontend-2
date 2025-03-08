@@ -1,4 +1,3 @@
-import React from 'react';
 import { useLocation } from 'react-router-dom'; // Import useLocation to check the current route
 import RoutesPage from './Routes/RoutesPage';
 import NavbarComponent from './Components/Navbar/NavbarComponent';

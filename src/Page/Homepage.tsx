@@ -1,8 +1,7 @@
-import axios, { AxiosResponse } from "axios";
+import  { AxiosResponse } from "axios";
 import React, { useEffect, useState } from "react";
 import { Grid, Card, CardContent, Typography, Button, Dialog, DialogTitle, DialogContent, TextField, DialogActions } from "@mui/material";
 import FolderIcon from "@mui/icons-material/Folder";
-import AddIcon from "@mui/icons-material/Add";
 import api from "../Auth/axiosInstance";
 import { useNavigate, useLocation } from "react-router-dom"; // Added useLocation to track the active folder
 
